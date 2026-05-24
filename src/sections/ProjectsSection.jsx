@@ -10,7 +10,7 @@ function ProjectsSection() {
             technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
             image: "🛍️",
             liveLink: "https://my-shop-blush-nine.vercel.app/",
-            githubLink: "https://github.com/ahmedsaleh202n0-jpg",
+            githubLink: "https://github.com/ahmedsaleh202n0-jpg/My-Portfolio-Website",
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ function ProjectsSection() {
             technologies: ["React", "Tailwind CSS", "Chart.js", "API Integration"],
             image: "📊",
             liveLink: "https://my-shop-blush-nine.vercel.app/",
-            githubLink: "https://github.com/ahmedsaleh202n0-jpg",
+            githubLink: "https://github.com/ahmedsaleh202n0-jpg/My-Portfolio-Website",
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ function ProjectsSection() {
             technologies: ["React", "JavaScript", "Weather API", "Responsive Design"],
             image: "🌤️",
             liveLink: "https://my-shop-blush-nine.vercel.app/",
-            githubLink: "https://github.com/ahmedsaleh202n0-jpg",
+            githubLink: "https://github.com/ahmedsaleh202n0-jpg/My-Portfolio-Website",
         },
         {
             id: 4,
@@ -37,7 +37,7 @@ function ProjectsSection() {
             technologies: ["React", "JavaScript", "LocalStorage", "Framer Motion"],
             image: "✅",
             liveLink: "https://my-shop-blush-nine.vercel.app/",
-            githubLink: "https://github.com/ahmedsaleh202n0-jpg",
+            githubLink: "https://github.com/ahmedsaleh202n0-jpg/My-Portfolio-Website",
         },
     ];
 
@@ -164,7 +164,7 @@ function ProjectsSection() {
                         Want to see more of my work?
                     </p>
                     <a
-                        href="https://github.com"
+                        href="https://github.com/ahmedsaleh202n0-jpg/My-Portfolio-Website"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
