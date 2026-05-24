@@ -65,7 +65,7 @@ body {
 }
 
 * {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #root {
@@ -135,8 +135,9 @@ code {
 
 button,
 a {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
+  will-change: transform;
 }
 
 button:hover,
@@ -146,7 +147,8 @@ a:hover {
 
 input,
 textarea {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 input:focus,
