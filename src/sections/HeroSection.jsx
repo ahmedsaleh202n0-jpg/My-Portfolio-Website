@@ -69,62 +69,62 @@ const HeroSection = () => {
             >
                 {/* Left content */}
                 <div>
-                {/* Avatar */}
-                <motion.div variants={itemVariants} className="mb-8">
-                    <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl">
-                        <div className="w-full h-full rounded-full bg-dark flex items-center justify-center overflow-hidden">
-                            <div className="text-5xl font-bold text-primary">AS</div>
+                    {/* Avatar */}
+                    <motion.div variants={itemVariants} className="mb-8">
+                        <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl">
+                            <div className="w-full h-full rounded-full bg-dark flex items-center justify-center overflow-hidden">
+                                <div className="text-5xl font-bold text-primary">AS</div>
+                            </div>
                         </div>
-                    </div>
-                </motion.div>
+                    </motion.div>
 
-                {/* Main title and tagline */}
-                <motion.div variants={itemVariants} className="mb-6 text-left">
-                    <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-light via-primary to-secondary bg-clip-text text-transparent mb-4">
-                        Ahmed Saleh
-                    </h1>
-                    <p className="text-xl md:text-2xl text-primary font-semibold mb-2">
-                        Front-End Developer
-                    </p>
-                    <p className="text-gray-400 text-lg md:text-xl">
-                        Building modern, fast, and responsive web experiences with React and JavaScript. Passionate about clean code and user-centered design.
-                    </p>
-                </motion.div>
+                    {/* Main title and tagline */}
+                    <motion.div variants={itemVariants} className="mb-6 text-left">
+                        <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-light via-primary to-secondary bg-clip-text text-transparent mb-4">
+                            Ahmed Saleh
+                        </h1>
+                        <p className="text-xl md:text-2xl text-primary font-semibold mb-2">
+                            Front-End Developer
+                        </p>
+                        <p className="text-gray-400 text-lg md:text-xl">
+                            Building modern, fast, and responsive web experiences with React and JavaScript. Passionate about clean code and user-centered design.
+                        </p>
+                    </motion.div>
 
-                {/* Call-to-action buttons */}
-                <motion.div
-                    variants={itemVariants}
-                    className="flex flex-col sm:flex-row gap-4 mb-12"
-                >
-                    <a
-                        href="#contact"
-                        className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                    {/* Call-to-action buttons */}
+                    <motion.div
+                        variants={itemVariants}
+                        className="flex flex-col sm:flex-row gap-4 mb-12"
                     >
-                        <Mail size={20} />
-                        Get in Touch
-                    </a>
-                    <a
-                        href="/cv.pdf"
-                        className="px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-glass backdrop-blur-sm transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
-                    >
-                        <Download size={20} />
-                        Download CV
-                    </a>
-                </motion.div>
+                        <a
+                            href="#contact"
+                            className="px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                        >
+                            <Mail size={20} />
+                            Get in Touch
+                        </a>
+                        <a
+                            href="/cv.pdf"
+                            className="px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-glass backdrop-blur-sm transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                        >
+                            <Download size={20} />
+                            Download CV
+                        </a>
+                    </motion.div>
 
-                {/* Scroll indicator */}
-                <motion.div
-                    variants={itemVariants}
-                    className="mt-8 flex justify-start"
-                    animate={{ y: [0, 10, 0] }}
-                    transition={{ duration: 2, repeat: Infinity }}
-                    onClick={handleScrollDown}
-                    style={{ cursor: 'pointer' }}
-                >
-                    <div className="w-10 h-16 border-2 border-primary rounded-full flex items-start justify-center p-2 hover:border-secondary transition-colors duration-300">
-                        <ChevronDown className="text-primary animate-pulse" size={24} />
-                    </div>
-                </motion.div>
+                    {/* Scroll indicator */}
+                    <motion.div
+                        variants={itemVariants}
+                        className="mt-8 flex justify-start"
+                        animate={{ y: [0, 10, 0] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                        onClick={handleScrollDown}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        <div className="w-10 h-16 border-2 border-primary rounded-full flex items-start justify-center p-2 hover:border-secondary transition-colors duration-300">
+                            <ChevronDown className="text-primary animate-pulse" size={24} />
+                        </div>
+                    </motion.div>
                 </div>
 
                 {/* Right side - Image */}
@@ -139,10 +139,14 @@ const HeroSection = () => {
                     >
                         {/* Glow background */}
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl blur-2xl" />
-                        
+
                         {/* Image container */}
                         <div className="relative h-full w-full rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 overflow-hidden flex items-center justify-center shadow-2xl">
-                            <div className="text-9xl opacity-30">💻</div>
+                            <img 
+                                src="/profile.jpg" 
+                                alt="Ahmed Saleh" 
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </motion.div>
                 </motion.div>
