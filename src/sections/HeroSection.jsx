@@ -143,7 +143,7 @@ const HeroSection = () => {
                         {/* Image container */}
                         <div className="relative h-full w-full rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/30 overflow-hidden flex items-center justify-center shadow-2xl">
                             <img
-                                src="../public/profile.jpg"
+                                src="/profile.jpg.PNG"
                                 alt="Ahmed Saleh"
                                 className="w-full h-full object-cover"
                             />
