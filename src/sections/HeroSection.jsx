@@ -71,9 +71,19 @@ const HeroSection = () => {
                 <div>
                     {/* Avatar */}
                     <motion.div variants={itemVariants} className="mb-8">
-                        <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl">
+                        <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl lg:block hidden">
                             <div className="w-full h-full rounded-full bg-dark flex items-center justify-center overflow-hidden">
                                 <div className="text-5xl font-bold text-primary">AS</div>
+                            </div>
+                        </div>
+                        {/* Mobile Avatar with Image */}
+                        <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-2xl lg:hidden">
+                            <div className="w-full h-full rounded-full overflow-hidden">
+                                <img
+                                    src="/profile.jpg"
+                                    alt="Ahmed Saleh"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
                     </motion.div>
